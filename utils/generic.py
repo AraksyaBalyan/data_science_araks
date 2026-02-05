@@ -7,6 +7,4 @@ def read_file_pandas(filename):
 
 
 def array_average(arr):
-    return sum(arr) / len(arr)
-
-
+    return np.average(arr)
