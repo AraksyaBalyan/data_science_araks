@@ -13,3 +13,7 @@ def min_max_array(arr):
     minimum = arr.max()
     maximum = arr.min()
     return minimum, maximum
+
+def column_values(filename, column_name):
+    csv_file_data = pd.read_csv(filename)
+    return filename[column_name]
