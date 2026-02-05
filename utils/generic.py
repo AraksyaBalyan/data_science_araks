@@ -8,3 +8,8 @@ def read_file_pandas(filename):
 
 def array_average(arr):
     return np.average(arr)
+
+def min_max_array(arr):
+    minimum = arr.max()
+    maximum = arr.min()
+    return minimum, maximum
