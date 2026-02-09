@@ -14,6 +14,13 @@ def min_max_array(arr):
     maximum = arr.min()
     return minimum, maximum
 
-def column_values(filename, column_name):
-    csv_file_data = pd.read_csv(filename)
-    return filename[column_name]
+
+def get_column_from_csv(file_path, column_name):
+    df = pd.read_csv(file_path)
+
+    return df[column_name]
+
+result = get_column_from_csv('E:\Downloads\ archive (2)\world_university_survey_dataset.csv', 'age')
+print(result)
+print(array_average(result))
+print(min_max_array(result))
